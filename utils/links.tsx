@@ -15,6 +15,7 @@ import {
 
 type NavLink = {
   href: string;
+  icon?: React.ReactNode;
   label: string;
 };
 
@@ -25,21 +26,22 @@ export const NavLinks: NavLink[] = [
   { href: "/favorites", label: "favorites" },
   { href: "/cart", label: "cart" },
   { href: "/orders", label: "orders" },
+  { href: '/admin/sales', label: 'dashboard' },
 ];
 
-type CategoryLink = {
-  href: string;
-  icon: React.ReactNode;
-  category: string;
-};
+export const adminLinks: NavLink[] = [
+  { href: '/admin/sales', label: 'sales' },
+  { href: '/admin/products', label: 'my products' },
+  { href: '/admin/products/create', label: 'create product' },
+];
 
-export const CategoryLinks: CategoryLink[] = [
-  { href: "/", icon: <Watch />, category: "Watch" },
-  { href: "/", icon: <Speaker />, category: "Speaker" },
-  { href: "/", icon: <Mouse />, category: "Mouse" },
-  { href: "/", icon: <Monitor />, category: "Monitor" },
-  { href: "/", icon: <Smartphone />, category: "Mobile Phone" },
-  { href: "/", icon: <Laptop />, category: "Laptop" },
-  { href: "/", icon: <Keyboard />, category: "Keyboard" },
-  { href: "/", icon: <Headphones />, category: "Headphone" },
+export const CategoryLinks: NavLink[] = [
+  { href: "/", icon: <Watch />, label: "watch" },
+  { href: "/", icon: <Speaker />, label: "speaker" },
+  { href: "/", icon: <Mouse />, label: "mouse" },
+  { href: "/", icon: <Monitor />, label: "monitor" },
+  { href: "/", icon: <Smartphone />, label: "mobile phone" },
+  { href: "/", icon: <Laptop />, label: "Laptop" },
+  { href: "/", icon: <Keyboard />, label: "keyboard" },
+  { href: "/", icon: <Headphones />, label: "headphone" },
 ];

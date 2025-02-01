@@ -24,8 +24,10 @@ async function SingleProductPage({ params }: { params: { id: string } }) {
 
               <div className="relative">
                 <div className="text-center mb-4 md:p-6">
-                  <img
+                  <Image
                     src={image}
+                    width={1280}
+                    height={1280}
                     alt=""
                     className="max-w-full h-auto"
                   />

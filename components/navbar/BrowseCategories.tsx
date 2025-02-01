@@ -24,11 +24,11 @@ function BrowseCategories() {
         </DropdownMenuTrigger>
 
         <DropdownMenuContent className="w-56" align="start">
-          {CategoryLinks.map((item) => (
-            <DropdownMenuSub key={item.category}>
-              <DropdownMenuSubTrigger>
-                {item.icon}
-                {item.category}
+          {CategoryLinks.map((link) => (
+            <DropdownMenuSub key={link.label}>
+              <DropdownMenuSubTrigger className="capitalize">
+                {link.icon}
+                {link.label}
               </DropdownMenuSubTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuSubContent>

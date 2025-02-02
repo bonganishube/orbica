@@ -43,14 +43,14 @@ function LinksDropdown() {
           {NavLinks.map((link) => {
             if (link.label === 'dashboard' && !isAdmin) return null;
             return (
-              <DropdownMenuItem key={link.href} className="md:hidden">
+              <DropdownMenuItem key={link.href} className="xl:hidden">
                 <Link href={link.href} className='capitalize w-full'>
                   {link.label}
                 </Link>
               </DropdownMenuItem>
             );
           })}
-          <DropdownMenuSeparator className="md:hidden"/>
+          <DropdownMenuSeparator className="xl:hidden"/>
           <DropdownMenuItem>
             <SignOutLink />
           </DropdownMenuItem>

@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
+import SectionTitle from "../global/SectionTitle";
+import Container from "../global/Container";
 
 const Categories = [
   {
@@ -31,10 +33,8 @@ const Categories = [
 function ProductsCategory() {
   return (
     <section className="ezy__epcategory1 light py-14 md:py-24 text-zinc-900 dark:text-white relative overflow-hidden z-10">
-      <div className="container px-4 mx-auto">
-        <h2 className="text-2xl leading-none md:text-[40px] font-bold">
-          Product Category
-        </h2>
+      <Container>
+        <SectionTitle text="product category" />
 
         <div className="grid grid-cols-12 mt-6 md:mt-12">
           {Categories.map((item) => (
@@ -66,7 +66,7 @@ function ProductsCategory() {
         <div className="text-center mt-12">
           <Button size="lg">See All</Button>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -12,7 +12,7 @@ import BrowseCategories from "./BrowseCategories";
 
 function Navbar() {
   return (
-    <header className="border-b font-sans min-h-[60px] py-8 tracking-wide relative z-50">
+    <header className="font-sans min-h-[60px] py-8 tracking-wide relative z-50">
       <div className="flex flex-wrap items-center max-lg:gap-y-6 max-sm:gap-x-4">
         <Logo />
         <div className="max-xl:hidden xl:!flex xl:items-center max-xl:before:fixed max-xl:before:opacity-40 max-xl:before:inset-0 max-xl:before:z-50">

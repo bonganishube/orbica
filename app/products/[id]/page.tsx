@@ -23,7 +23,7 @@ async function SingleProductPage({ params }: { params: { id: string } }) {
   return (
     <section>
       <BreadCrumbs name={product.name} />
-      <div className="ezy__epoverview1 light py-14 md:py-24  text-zinc-900 dark:text-white relative overflow-hidden z-10">
+      <div className="ezy__epoverview1 light py-14 md:py-24 mt-4 text-zinc-900 dark:text-white relative overflow-hidden z-10">
         <div className="container px-4 mx-auto">
           <div className="grid grid-cols-2 gap-6">
             <div className="col-span-2 md:col-span-1 relative">
@@ -33,9 +33,9 @@ async function SingleProductPage({ params }: { params: { id: string } }) {
                 <div className="text-center mb-4 md:p-6">
                   <Image
                     src={image}
-                    width={1280}
-                    height={1280}
                     alt=""
+                    height="1280"
+                    width="1280"
                     className="max-w-full h-auto"
                   />
                 </div>
@@ -43,17 +43,17 @@ async function SingleProductPage({ params }: { params: { id: string } }) {
                 <ul className="flex">
                   <a href="#!">
                     <li className="w-24 h-24 inline-flex justify-center items-center bg-blue-50  border-blue-200 dark:border-blue-600 dark:border-opacity-20 rounded-lg mr-2.5 p-2">
-                      <img src={image} alt="" className="max-w-full h-auto" />
+                      <Image src={image} height="1280" width="1280" alt="" className="max-w-full h-auto" />
                     </li>
                   </a>
                   <a href="#!">
                     <li className="w-24 h-24 inline-flex justify-center items-center bg-blue-50  border-blue-200 dark:border-blue-600 dark:border-opacity-20 rounded-lg mr-2.5 p-2">
-                      <img src={image} alt="" className="max-w-full h-auto" />
+                      <Image src={image} height="1280" width="1280" alt="" className="max-w-full h-auto" />
                     </li>
                   </a>
                   <a href="#!">
                     <li className="w-24 h-24 inline-flex justify-center items-center bg-blue-50  border-blue-200 dark:border-blue-600 dark:border-opacity-20 rounded-lg mr-2.5 p-2">
-                      <img src={image} alt="" className="max-w-full h-auto" />
+                      <Image src={image} height="1280" width="1280" alt="" className="max-w-full h-auto" />
                     </li>
                   </a>
                 </ul>
